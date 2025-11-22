@@ -1,0 +1,547 @@
+[gd_scene load_steps=66 format=3 uid="uid://vgwkeek03yxf"]
+
+[ext_resource type="Script" uid="uid://s01nip18ete8" path="res://addons/godot_ninja/scenes/main_control.gd" id="1_xq4b5"]
+[ext_resource type="Script" uid="uid://cbyeeul7wpcd0" path="res://addons/godot_ninja/scripts/step.gd" id="2_5i604"]
+[ext_resource type="Texture2D" uid="uid://c11iv5sw36tyr" path="res://addons/godot_ninja/assets/godot_ninja.png" id="2_jo0po"]
+[ext_resource type="Texture2D" uid="uid://dy8rvwnjh4c6x" path="res://addons/godot_ninja/assets/dialogue.png" id="4_5i604"]
+
+[sub_resource type="Resource" id="Resource_yf88v"]
+script = ExtResource("2_5i604")
+text = "Salve, aspiranti maestri del game development! Siete pronti a svelare i segreti della creazione di giochi?"
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_2u3bl"]
+script = ExtResource("2_5i604")
+text = "Io sono il vostro Godot Ninja personale, e sono qui per guidarvi attraverso i primi passi nell'arte del game development con [b]Godot Engine[/b]!"
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_5i604"]
+script = ExtResource("2_5i604")
+text = "Forse vi sentite come un principiante alle prime armi, o forse avete già qualche conoscenza ma volete affinare le vostre tecniche. Non importa il vostro livello, sono qui per aiutarvi a navigare nel fantastico mondo di Godot."
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_4inu8"]
+script = ExtResource("2_5i604")
+text = "In questo tutorial, impareremo le basi di Godot: dall'interfaccia utente alla creazione della vostra prima scena, fino a come dare vita ai vostri oggetti con il codice."
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_oic0o"]
+script = ExtResource("2_5i604")
+text = "Immaginate l'Engine di Gioco come una cassetta degli attrezzi completa o, nel nostro caso, il dojo stesso!
+Senza un Engine, dovreste scrivere da zero il codice per cose basilari come disegnare un'immagine sullo schermo, far muovere gli oggetti o gestire l'audio. Sarebbe un lavoro da giganti!"
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_j1gax"]
+script = ExtResource("2_5i604")
+text = "Preparatevi a impugnare la tastiera come una katana e a tagliare via le difficoltà! Con me, imparerete a muovervi agilmente nell'editor e a costruire giochi che lasceranno tutti a bocca aperta."
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_sbojk"]
+script = ExtResource("2_5i604")
+text = "Pronti per la vostra prima missione? Ottimo! Iniziamo subito a esplorare il dojo di Godot. Seguitemi!"
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_awk0u"]
+script = ExtResource("2_5i604")
+text = "Osservate questa grande area centrale: è la [b]Viewport[/b] o  [b]Spazio di Lavoro[/b].
+Questo è il [b]Campo di Battaglia[/b]: Qui è dove costruite e vedete la vostra scena in tempo reale. Che si tratti di un mondo 2D piatto o di una scena 3D, è qui che prendono forma gli oggetti di gioco (i Nodi).
+"
+indicator = 1
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_462po"]
+script = ExtResource("2_5i604")
+text = "Nella parte superiore della [b]Viewport[/b], potete passare tra le diverse modalità, come 2D, 3D, Script e AssetLib. Per ora, concentriamoci su 2D o 3D."
+indicator = 1
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_dofal"]
+script = ExtResource("2_5i604")
+text = "Ora, spostate la vostra attenzione a sinistra. Questo è l'[b]Albero delle Scene[/b] (Scene Tree)."
+indicator = 2
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_sfhfe"]
+script = ExtResource("2_5i604")
+text = "Ogni oggetto nel vostro gioco è un [b]Nodo[/b]. L'Albero delle Scene mostra come sono organizzati gerarchicamente. È fondamentale per capire come i Nodi interagiscono tra loro."
+indicator = 2
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_nm2op"]
+script = ExtResource("2_5i604")
+text = "Il nodo in cima è il Root Node della scena, il capofamiglia che controlla tutto il resto. Tutta la vostra scena è contenuta qui!"
+indicator = 2
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_o1ve5"]
+script = ExtResource("2_5i604")
+text = "Sulla destra, troviamo l'[b]Ispettore[/b] (Inspector), uno strumento potentissimo."
+indicator = 0
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_laox5"]
+script = ExtResource("2_5i604")
+text = "Quando selezionate un [b]Nodo[/b] nell'Albero delle Scene, l'Ispettore mostra tutte le sue proprietà e impostazioni. Potete cambiare la sua posizione, le sue dimensioni, il suo colore e qualsiasi altra caratteristica!"
+indicator = 0
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_vdges"]
+script = ExtResource("2_5i604")
+text = "Non dimenticate la scheda [b]Node[/b] (accanto a Inspector)! È qui che collegheremo i Segnali tra i Nodi, un modo cruciale per farli comunicare."
+indicator = 0
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_rpdnp"]
+script = ExtResource("2_5i604")
+text = "Guardate in basso a sinistra: ecco il [b]FileSystem Dock[/b]."
+indicator = 3
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_ghn7x"]
+script = ExtResource("2_5i604")
+text = "Questo pannello è il vostro inventario di progetto. Contiene tutti i file: le vostre scene, script, immagini, suoni e tutto ciò di cui avete bisogno per il gioco.
+Tenere i file organizzati qui è la chiave per un progetto pulito e manutenibile. La disciplina ninja si applica anche ai vostri file!"
+indicator = 3
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_47bx3"]
+script = ExtResource("2_5i604")
+text = "E infine, ma non meno importante, c'è l'[b]Editor di Script[/b]. Questa è una modalità diversa di visualizzazione del viewport principale (cliccate sulla scheda \"Script\" in alto)."
+indicator = 1
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_xwdu5"]
+script = ExtResource("2_5i604")
+text = "Qui scriviamo il codice (principalmente in [b]GDScript[/b]) che darà vita al vostro gioco, definendo come i Nodi si muovono, reagiscono e interagiscono."
+indicator = 1
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_fxrfb"]
+script = ExtResource("2_5i604")
+text = "Nella parte inferiore dell'editor, troverete anche la console per l'[b]Output[/b] e il [b]Debugger[/b]. Sono i vostri occhi e orecchie per capire cosa succede sotto il cofano del gioco."
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_6hxue"]
+script = ExtResource("2_5i604")
+text = "È ora di applicare la nostra conoscenza! La nostra missione è creare la prima scena 2D e posizionare il nostro primo oggetto. Seguite attentamente."
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_fjhed"]
+script = ExtResource("2_5i604")
+text = "[b]Creare una Nuova Scena 2D[/b]
+
+Per creare una nuova scena 2D dovrete cliccare su [b]Scene (barra in alto) e poi su [b]Nuova scena[/b].
+Adesso dobbiamo scegliere il nodo radice; clicca su Scena 2d!"
+indicator = 2
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_76wuj"]
+script = ExtResource("2_5i604")
+text = "Adesso possiamo aggiungere il nostro primo elemento alla scena.
+Nel file system dock, cercate un file \"icon.svg\", cliccate e draggate questo file sulla vostra scena.
+(Ricordatevi di impostare la visualizzazione 2d cliccando in alto)"
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_imj1s"]
+script = ExtResource("2_5i604")
+text = "Come avrete notato, l'immagine viene visualizzata nella scena e si è creato un [b]nuovo nodo[/b] nell'albero della scena!"
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_c2qyv"]
+script = ExtResource("2_5i604")
+text = "[b]Salvare la scena[/b]
+
+Per salvare la scena è sufficiente premere il tasto CTRL + S, e indicare il percorso di salvataggio. Salvate la vostra scena dentro una nuova cartella chiamata [b]scenes[/b]."
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_ddot3"]
+script = ExtResource("2_5i604")
+text = "[b]Lanciare il gioco[/b]
+
+Adesso siamo pronti per lanciare il gioco! per lanciarlo cliccate sul tasto [b]Esegui progetto[/b] in alto a destra dello schermo (tasto play).
+
+Siccome non avete ancora scelto una scena di lancio principale del gioco, Godot vi chiederà quale impostare, selezionate quella corrente."
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_co1dy"]
+script = ExtResource("2_5i604")
+text = "Si aprirà una nuova finestra che mostra solo la vostra scena! Se vedete l'icona di Godot, avete completato la missione."
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_e8ro5"]
+script = ExtResource("2_5i604")
+text = "Eccellente! Avete creato e lanciato la vostra prima scena. Siete pronti per passare al codice?"
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_5jlh5"]
+script = ExtResource("2_5i604")
+text = "[b]Il Primo Script[/b]
+
+La pratica rende perfetti! La nostra prossima mossa è [b]attaccare uno Script[/b] al nostro nodo principale e fare in modo che gridi: \"Sono pronto!\" non appena la scena viene lanciata.
+"
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_trs1q"]
+script = ExtResource("2_5i604")
+text = "Nell'Albero delle Scene, seleziona il nodo Node2D radice della scena.
+Clicca sull'icona [b]Attacca Script[/b] (un foglio di carta con un simbolo '+') accanto all'icona del nodo, oppure clicca con il tasto destro sul nodo e seleziona \"Attacca Script\" (Attach Script).
+Si aprirà una finestra di dialogo. Assicurati che il Linguaggio sia impostato su GDScript.
+
+Clicca su [b]Crea[/b]."
+indicator = 2
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_ndbs4"]
+script = ExtResource("2_5i604")
+text = "Ottimo! Ora la scheda dell'Editor di Script si aprirà, e vedrete un file chiamato node_2d.gd (o simile) e un codice iniziale.
+
+GDScript è il linguaggio di scripting nativo di Godot. Se conoscete Python, vi sentirete a casa! Godot ha progettato GDScript per essere molto simile a Python."
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_ox1mk"]
+script = ExtResource("2_5i604")
+text = "Questa è la nostra tela. La funzione _ready() è come l'appello iniziale del ninja: viene eseguita solo una volta, proprio quando il nodo è operativo.
+
+Modifica il codice esistente per includere una semplice istruzione [b]print()[/b], copiando la funzione _ready nel codice qui a destra.
+"
+code = "func _ready():
+    # Usiamo 'print' per inviare un messaggio alla console di output.
+    print(\"Sono pronto! Inizio l'addestramento.\")"
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_pil8m"]
+script = ExtResource("2_5i604")
+text = "[b]Lanciare e Verificare l'Output[/b]
+
+Adesso puoi salvare la nostra scena e lanciarla di nuovo.
+Quando la finestra del gioco appare, non vedrai nulla di nuovo nel gioco stesso, ma guarda in basso, nella console Output dell'editor di Godot!
+Se vedete il messaggio \"Sono pronto! Inizio l'addestramento.\" comparire nella console, avete eseguito con successo il vostro primo script! La missione è compiuta.
+Non dimenticarti di tornare da me cliccando su [b]Godot Ninja[/b] in basso!"
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_bkekb"]
+script = ExtResource("2_5i604")
+text = "Molto bene. Hai creato un nodo, lo hai reso visibile e hai scritto il tuo primo codice. Sei pronto per la prossima sfida: far [b]muovere[/b] lo Sprite?"
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_537f0"]
+script = ExtResource("2_5i604")
+text = "[b]Facciamo muovere lo sprite[/b]
+
+Bene! Un ninja deve muoversi. Per far muovere il nostro Sprite, dobbiamo fare due cose: dire a Godot quali tasti vogliamo usare e poi scrivere il codice che gestisce il movimento in ogni momento."
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_earff"]
+script = ExtResource("2_5i604")
+text = "[b]Configurazione dell'Input Map[/b]
+
+Per prima cosa, diciamo a Godot: \"Se premo questo tasto, voglio chiamarlo 'Muovi a Destra'.
+- Nel menu in alto, vai su Progetto -> Impostazioni Progetto (Project -> Project Settings).
+- Vai alla scheda Input Map.
+Nel campo Action (Azione) in alto, digita il nome della tua prima azione. Ad esempio, scrivi \"destra\".-
+- Clicca sul pulsante \"Add\" (Aggiungi) accanto al campo.
+- Una volta aggiunta l'azione cliccate sul tasto [b]+[/b] vicino alla nuova azione;
+- Cliccate poi la freccia destra della tastiera (che verrà registrata come input), e poi sul tasto OK.
+"
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_jl6oa"]
+script = ExtResource("2_5i604")
+text = "Ora, quando useremo [b]is_action_pressed(\"destra\")[/b], Godot saprà che stiamo parlando del tasto Destra/D!"
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_rj34r"]
+script = ExtResource("2_5i604")
+text = "[b]Funzione _process[/b]
+
+Tornando al nostro script, mentre _ready() viene chiamato una sola volta, noi abbiamo bisogno di un codice che venga eseguito costantemente. Per questo, usiamo la funzione _process(delta).
+
+_process() viene chiamata in ogni frame di gioco. Se il gioco gira a 60 frame al secondo, questa funzione viene chiamata 60 volte al secondo!"
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_lm44h"]
+script = ExtResource("2_5i604")
+text = "L'argomento delta è cruciale. È il tempo trascorso dall'ultimo frame. Lo usiamo per rendere il movimento [b]indipendente dalla velocità del computer[/b]. Se un computer è lento, l'oggetto si muoverà alla stessa velocità, solo a scatti più grandi."
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_qyexm"]
+script = ExtResource("2_5i604")
+text = "Copia la funzione qui a destra sul tuo script per aggiungere le logiche per il movimento a destra.
+Una volta fatto, esegui il gioco e prova a muoverti a destra!
+(Clicca sulla finestra di gioco una volta lanciata se non dovesse funzionare l'input)"
+code = "func _process(delta):
+  if Input.is_action_pressed(\"destra\"):
+    $Icon.position.x = $Icon.position.x + 10
+"
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_k2cja"]
+script = ExtResource("2_5i604")
+text = "Se il tuo sprite si muove a destra, sei riuscito a far funzionare il tuo primo input!
+"
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_on3js"]
+script = ExtResource("2_5i604")
+text = "Un vero ninja non si muove solo in una direzione! Per la vostra prima vera sfida di codice, devi completare lo script da solo."
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_pbe3q"]
+script = ExtResource("2_5i604")
+text = "[b]Obiettivo della sfida[/b]
+
+Mappa gli input mancanti [b]sinistra[/b], [b]su[/b], [b]giu[/b] e modificate il codice per far muovere lo sprite anche nelle altre direzioni!
+Una volta che hai completato la challenge, torna da me per proseguire l'addestramento!
+
+[b]Attenzione[/b]: nei videogiochi, l'asse y è invertito!"
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_jbxak"]
+script = ExtResource("2_5i604")
+text = "Complimenti, avete padroneggiato l'arte dell'Input. Pronti per la prossima mossa?
+"
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_58lbk"]
+script = ExtResource("2_5i604")
+text = "[Definire una variabile]
+
+Nel vostro script avete definito la velocità (10) all'interno della logica, questo non è il massimo se vogliamo modificarla successivamente.
+
+Per aggiungere una variabile velocità, copiate il codice a destra sopra le funzioni che avete definito."
+code = "@export var velocita: float = 10.0"
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_y4h7r"]
+script = ExtResource("2_5i604")
+text = "Una volta aggiunta la variabile, potete sostituirla a tutti i [b]10[/b] presenti nel vostro codice.
+
+Provate ad eseguire il gioco per controllare che funzioni ancora come prima!"
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_kis06"]
+script = ExtResource("2_5i604")
+text = "[b]Esportare una variabile[/b]
+
+Hai notato l'annotazione [b]@export[/b] davanti alla variabile definita? Questa annotazione è facoltativa e serve a dire a Godot che questa variabile è modificabile dal Ispettore (ricordi la schermata a destra?)"
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_iohsa"]
+script = ExtResource("2_5i604")
+text = "Per andare a visualizzare questa variabile, clicca sul nodo radice della vostra scena."
+indicator = 2
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_44f8h"]
+script = ExtResource("2_5i604")
+text = "Osserva adesso l'Ispettore, dovreste vedere un campo chiamato Velocita con il valore 10.0.
+
+Ora puoi modificare quel valore (ad esempio, mettendo 20.0) direttamente dall'Ispettore e lanciare la scena per vedere immediatamente quanto è più veloce il tuo personaggio, senza dover mai aprire il codice!"
+indicator = 0
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_r1kiv"]
+script = ExtResource("2_5i604")
+text = "Hai padroneggiato l'uso delle variabili esportate, rendendo il tuo codice più flessibile e facile da bilanciare."
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_hqdfj"]
+script = ExtResource("2_5i604")
+text = "La fase di introduzione alla creazione di giochi si conclude qui, giovani allievi! Avete imparato a muovervi nel dojo, a scrivere il vostro primo codice e a padroneggiare i concetti fondamentali di Input e variabili esportate."
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="Resource" id="Resource_eec3l"]
+script = ExtResource("2_5i604")
+text = "Siete ora pronti ad abbandonare l'addestramento basilare. La vera avventura, quella della creazione del vostro primo gioco completo, sta per iniziare! D'ora in poi, ogni passo vi porterà a costruire il vostro progetto, pezzo dopo pezzo.
+[b]Che la forza dei Nodi sia con voi![/b]"
+metadata/_custom_type_script = "uid://cbyeeul7wpcd0"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2shru"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_xq4b5"]
+material = SubResource("StandardMaterial3D_2shru")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8ngw3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jo0po"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5i604"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yf88v"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8ngw3"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.1, 0.1, 0.1, 0.6)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jo0po"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.1, 0.1, 0.1, 0.6)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="GDScriptSyntaxHighlighter" id="GDScriptSyntaxHighlighter_5i604"]
+
+[node name="MainControl" type="Control"]
+clip_children = 2
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xq4b5")
+steps = Array[ExtResource("2_5i604")]([SubResource("Resource_yf88v"), SubResource("Resource_2u3bl"), SubResource("Resource_5i604"), SubResource("Resource_4inu8"), SubResource("Resource_oic0o"), SubResource("Resource_j1gax"), SubResource("Resource_sbojk"), SubResource("Resource_awk0u"), SubResource("Resource_462po"), SubResource("Resource_dofal"), SubResource("Resource_sfhfe"), SubResource("Resource_nm2op"), SubResource("Resource_o1ve5"), SubResource("Resource_laox5"), SubResource("Resource_vdges"), SubResource("Resource_rpdnp"), SubResource("Resource_ghn7x"), SubResource("Resource_47bx3"), SubResource("Resource_xwdu5"), SubResource("Resource_fxrfb"), SubResource("Resource_6hxue"), SubResource("Resource_fjhed"), SubResource("Resource_76wuj"), SubResource("Resource_imj1s"), SubResource("Resource_c2qyv"), SubResource("Resource_ddot3"), SubResource("Resource_co1dy"), SubResource("Resource_e8ro5"), SubResource("Resource_5jlh5"), SubResource("Resource_trs1q"), SubResource("Resource_ndbs4"), SubResource("Resource_ox1mk"), SubResource("Resource_pil8m"), SubResource("Resource_bkekb"), SubResource("Resource_537f0"), SubResource("Resource_earff"), SubResource("Resource_jl6oa"), SubResource("Resource_rj34r"), SubResource("Resource_lm44h"), SubResource("Resource_qyexm"), SubResource("Resource_k2cja"), SubResource("Resource_on3js"), SubResource("Resource_pbe3q"), SubResource("Resource_jbxak"), SubResource("Resource_58lbk"), SubResource("Resource_y4h7r"), SubResource("Resource_kis06"), SubResource("Resource_iohsa"), SubResource("Resource_44f8h"), SubResource("Resource_r1kiv"), SubResource("Resource_hqdfj"), SubResource("Resource_eec3l")])
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Control" type="Control" parent="HBoxContainer"]
+visible = false
+clip_children = 2
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+
+[node name="NinjaViewport" type="SubViewport" parent="HBoxContainer/Control"]
+unique_name_in_owner = true
+transparent_bg = true
+size = Vector2i(360, 360)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="HBoxContainer/Control/NinjaViewport"]
+mesh = SubResource("BoxMesh_xq4b5")
+
+[node name="Camera3D" type="Camera3D" parent="HBoxContainer/Control/NinjaViewport"]
+transform = Transform3D(0.8898318, -0.14212061, 0.433591, 0, 0.95025575, 0.31147078, -0.45628875, -0.2771566, 0.84556776, 2.752218, 1.9770601, 5.3672395)
+fov = 14.6
+
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_right = -35
+theme_override_constants/margin_bottom = -55
+
+[node name="NinjaTexture" type="TextureRect" parent="HBoxContainer/Control/MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+texture = ExtResource("2_jo0po")
+expand_mode = 3
+stretch_mode = 6
+
+[node name="DialogueContainer" type="MarginContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="NinePatchRect" type="NinePatchRect" parent="HBoxContainer/DialogueContainer"]
+layout_mode = 2
+texture = ExtResource("4_5i604")
+region_rect = Rect2(0, 0, 926, 414.5)
+patch_margin_left = 238
+patch_margin_top = 244
+patch_margin_right = 14
+patch_margin_bottom = 11
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/DialogueContainer/NinePatchRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextContainer" type="MarginContainer" parent="HBoxContainer/DialogueContainer/NinePatchRect/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 245
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 38
+theme_override_constants/margin_bottom = 20
+
+[node name="ScrollContainer" type="ScrollContainer" parent="HBoxContainer/DialogueContainer/NinePatchRect/VBoxContainer/TextContainer"]
+layout_mode = 2
+horizontal_scroll_mode = 0
+
+[node name="StepText" type="RichTextLabel" parent="HBoxContainer/DialogueContainer/NinePatchRect/VBoxContainer/TextContainer/ScrollContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/normal_font_size = 18
+theme_override_font_sizes/bold_font_size = 18
+theme_override_font_sizes/bold_italics_font_size = 18
+theme_override_font_sizes/italics_font_size = 18
+theme_override_font_sizes/mono_font_size = 18
+theme_override_styles/normal = SubResource("StyleBoxEmpty_8ngw3")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_jo0po")
+theme_override_styles/background = SubResource("StyleBoxEmpty_5i604")
+theme_override_styles/fill = SubResource("StyleBoxEmpty_yf88v")
+bbcode_enabled = true
+text = "Salve, aspiranti maestri del game development! Siete pronti a svelare i segreti della creazione di giochi?"
+shortcut_keys_enabled = false
+
+[node name="Buttons" type="MarginContainer" parent="HBoxContainer/DialogueContainer/NinePatchRect/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 230
+theme_override_constants/margin_right = 34
+theme_override_constants/margin_bottom = 21
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/DialogueContainer/NinePatchRect/VBoxContainer/Buttons"]
+layout_mode = 2
+
+[node name="Prev" type="Button" parent="HBoxContainer/DialogueContainer/NinePatchRect/VBoxContainer/Buttons/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_styles/hover = SubResource("StyleBoxFlat_8ngw3")
+disabled = true
+text = "Precedente"
+
+[node name="Spacer" type="Control" parent="HBoxContainer/DialogueContainer/NinePatchRect/VBoxContainer/Buttons/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Next" type="Button" parent="HBoxContainer/DialogueContainer/NinePatchRect/VBoxContainer/Buttons/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_styles/hover = SubResource("StyleBoxFlat_jo0po")
+text = "Successivo"
+
+[node name="CodeContainer" type="MarginContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="Code" type="CodeEdit" parent="HBoxContainer/CodeContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "# Nessun codice da mostrare"
+editable = false
+syntax_highlighter = SubResource("GDScriptSyntaxHighlighter_5i604")

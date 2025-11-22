@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://dohrfkqipd7df"]
+
+[ext_resource type="Texture2D" uid="uid://ba6vdmovl5t33" path="res://addons/godot_ninja/assets/kunai.png" id="1_ahiic"]
+[ext_resource type="Script" uid="uid://cp2njeoc5p5e" path="res://addons/godot_ninja/scripts/kunai.gd" id="1_anc6g"]
+
+[node name="Kunai" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_anc6g")
+
+[node name="Left" type="TextureRect" parent="."]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = -166.0
+offset_top = -27.0
+offset_right = -1.0
+offset_bottom = 30.0
+texture = ExtResource("1_ahiic")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="Right" type="TextureRect" parent="."]
+unique_name_in_owner = true
+layout_mode = 0
+offset_top = -27.0
+offset_right = 168.0
+offset_bottom = 33.0
+texture = ExtResource("1_ahiic")
+expand_mode = 1
+stretch_mode = 4
+flip_h = true
